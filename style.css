@@ -1,24 +1,35 @@
-.Menu-bar{
-    display: flex;
-    color: #393939;
-}
-.list-menu{
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-}
-.text-box{
-    margin: 1.5rem 1rem;                             
-}
 *{
     box-sizing: border-box;
     margin: 0;
 }
 body{
     font-family: 'TT Chocolates', sans-serif;
+    background-color: #f9f0f4;
+    z-index: 1;
 }
-.Logo{
-    margin: 1rem 22rem 1rem 15rem;
+.Menu-bar{
+    display: flex;
+    color: #393939;
+    height: 5rem;
+    background-color: #ffff;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-menu{ 
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 40rem;
+    height: auto;
+    align-items: center;
+    position: relative;
+}
+ul{
+    margin: 0;
+    padding: 0;
 }
 .text{
     text-decoration: none;
@@ -32,7 +43,97 @@ body{
 .font10px{
     font-size: 10px;
 }
+.list-icon{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    width: 20rem;
+    flex-flow: row wrap;
+    justify-content: space-around;
 
+}
+/* .background-menu{
+    background-color: #ffffff;
+    height: 45rem;
+    z-index: 1;
+} */
+/* menu phụ */
+.subnac-content{
+    align-items: center;
+    position: absolute;
+    display: flex;   
+    flex-flow: row wrap; 
+    left: -10rem;
+    width: 100%;
+    min-width: 122rem;
+    height: 38rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    padding: 3rem 11rem;
+    z-index: 0;
+    
+    display: none;
+    
+}
+.subnac-content .item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 1rem;
+    
+}
+.Subnav{
+    padding:  10px;
+}
+.Logo{
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color: #393939;
+    font-size: 16px;
+    line-height: 2rem;
+}
+.img-product{
+    border-radius: 0.5rem;
+    width: 180px;
+    height: 180px;
+}
 .padding-15px{
-    padding: 15px 10px;
+    margin: 15px;
+}
+.text-pink{
+    color: #b3848f;
+}
+.Subnav:hover .subnac-content{
+    align-items: center;
+    position: absolute;
+    display: flex;   
+    flex-flow: row wrap; 
+    left: -10rem;
+    min-width: 122rem;
+    width: 100%;
+    height: 38rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    padding: 3rem 11rem;
+    z-index: 0;
+}
+.Subnav:hover .Menu-bar{
+    height: 30rem;
+}
+.Subnav:hover {
+    background-color: #f9f0f4;
+    border-radius: 5px;
+    padding: 0 10px;
+    
+}
+.font16px{
+    font-size: 16px;
+}
+.text-left{
+    justify-content: flex-end !important;
 }
