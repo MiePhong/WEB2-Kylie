@@ -55,21 +55,20 @@ ul {
   justify-content: space-around;
 }
 
-/* .background-menu {
-  background-color: #ffffff;
+.background-menu {
+  background-color: white;
   height: 45rem;
   z-index: 1;
-} */
-
-.background_header {
-  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
 }
 
 /* menu phụ */
 .subnac-content {
   align-items: center;
   position: absolute;
-  display: flex;
   flex-flow: row wrap;
   left: -10rem;
   width: 100%;
@@ -80,8 +79,9 @@ ul {
   background-color: white;
   padding: 3rem 8rem;
   z-index: 0;
-
   display: none;
+  opacity: 1;
+  top: 111%;
 }
 .subnac-content .item {
   display: flex;
@@ -91,8 +91,24 @@ ul {
   margin-left: 1rem;
 }
 .Subnav {
-  padding: 10px;
+  padding: 0 10px;
 }
+
+.wrapper_subnac_content {
+  width: 100%;
+}
+
+.subnac-content::after {
+  display: block;
+  content: "";
+  bottom: 98%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+}
+
 .Logo {
   z-index: 1;
 }
@@ -113,6 +129,15 @@ a {
 .text-pink {
   color: #b3848f;
 }
+
+@keyframes appearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .Subnav:hover .subnac-content {
   align-items: center;
   position: absolute;
@@ -127,6 +152,7 @@ a {
   background-color: white;
   padding: 3rem 8rem;
   z-index: 0;
+  animation: appearence 0.2s linear;
 }
 .Subnav:hover .Menu-bar {
   height: 30rem;

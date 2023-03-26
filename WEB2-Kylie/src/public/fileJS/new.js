@@ -30,33 +30,26 @@ var btnFirstSort = document.querySelector(
 var sortList = document.querySelector(".sort_list");
 var sortListItem = document.querySelectorAll(".sort_list_item");
 var textSort = document.querySelector("#text_sort");
+var wrapperContentSort = document.querySelector(".wrapper_content_sort");
 
 btnFirstSort.onclick = function () {
   sortList.style.display = "block";
-  document.querySelector(
-    ".wrapper_sortBtn button:first-child"
-  ).style.borderBottomRightRadius = "0px";
-  document.querySelector(
-    ".wrapper_sortBtn button:first-child"
-  ).style.borderBottomLeftRadius = "0px";
+  wrapperContentSort.style.borderBottomRightRadius = "0px";
+  wrapperContentSort.style.borderBottomLeftRadius = "0px";
+  wrapperContentSort.style.borderBottom = "0px";
 };
+function closeSortList() {
+  sortList.removeAttribute("style");
+  wrapperContentSort.removeAttribute("style");
+}
 
-// btnFirstSort.onblur = function () {
-//   sortList.style.display = "none";
-//   btnFirstSort.style.borderBottomRightRadius = "4px";
-//   btnFirstSort.style.borderBottomLeftRadius = "4px";
-//   console.log(1);
-// };
+btnFirstSort.parentElement.onblur = function () {
+  closeSortList();
+};
 
 for (let i = 0; i < sortListItem.length; i++) {
   sortListItem[i].onclick = function () {
-    sortList.style.display = "none";
-    document.querySelector(
-      ".wrapper_sortBtn button:first-child"
-    ).style.borderBottomRightRadius = "4px";
-    document.querySelector(
-      ".wrapper_sortBtn button:first-child"
-    ).style.borderBottomLeftRadius = "4px";
+    closeSortList();
     textSort.innerText = sortListItem[i].innerText;
   };
 }
