@@ -22,3 +22,41 @@ var carculator = function (e, check) {
   parent.querySelector(".counter").innerText = number.toString();
   parent.parentElement.querySelector(".price").innerText = price.toString();
 };
+
+var btnFirstSort = document.querySelector(
+  ".wrapper_sortBtn button:first-child span"
+);
+
+var sortList = document.querySelector(".sort_list");
+var sortListItem = document.querySelectorAll(".sort_list_item");
+var textSort = document.querySelector("#text_sort");
+
+btnFirstSort.onclick = function () {
+  sortList.style.display = "block";
+  document.querySelector(
+    ".wrapper_sortBtn button:first-child"
+  ).style.borderBottomRightRadius = "0px";
+  document.querySelector(
+    ".wrapper_sortBtn button:first-child"
+  ).style.borderBottomLeftRadius = "0px";
+};
+
+// btnFirstSort.onblur = function () {
+//   sortList.style.display = "none";
+//   btnFirstSort.style.borderBottomRightRadius = "4px";
+//   btnFirstSort.style.borderBottomLeftRadius = "4px";
+//   console.log(1);
+// };
+
+for (let i = 0; i < sortListItem.length; i++) {
+  sortListItem[i].onclick = function () {
+    sortList.style.display = "none";
+    document.querySelector(
+      ".wrapper_sortBtn button:first-child"
+    ).style.borderBottomRightRadius = "4px";
+    document.querySelector(
+      ".wrapper_sortBtn button:first-child"
+    ).style.borderBottomLeftRadius = "4px";
+    textSort.innerText = sortListItem[i].innerText;
+  };
+}

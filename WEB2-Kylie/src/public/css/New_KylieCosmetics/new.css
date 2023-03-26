@@ -181,19 +181,85 @@ body {
   justify-content: space-between;
 }
 
+.wrapper_sortBtn {
+  display: flex;
+}
+
 .wrapper_sortBtn button {
-  width: 193px;
   height: 30px;
   margin-left: 15px;
   border-radius: 4px;
   border: 1px solid #111;
   font-size: 13px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .wrapper_sortBtn button:hover {
   cursor: pointer;
 }
 
+.wrapper_sortBtn button:last-child:hover {
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+}
+
+.wrapper_sortBtn button:first-child {
+  text-align: left;
+  padding: 0;
+}
+
+.wrapper_sortBtn button:first-child span {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .wrapper_sortBtn button:last-child {
   width: 136px;
+}
+
+#title_sort {
+  padding-left: 15px;
+}
+
+.sort_list {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  background-color: #f0f0f0;
+  width: 100.7%;
+  height: 154px;
+  border: 1px solid #111;
+  font-size: 13px;
+  /* left: -0px; */
+  border-radius: 0px 0px 4px 4px;
+  border-top: 0;
+  /* overflow-x: scroll; */
+  overflow: hidden;
+}
+
+.sort_list_item {
+  height: 20%;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.sort_list_item:hover {
+  background-color: #efd7e5;
+}
+
+#text_sort {
+  padding: 0 45px 0 8px;
+}
+
+.down_icon {
+  padding-right: 10px;
 }
