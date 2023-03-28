@@ -1,0 +1,88 @@
+.name_menu {
+  padding-top: 3em;
+  text-align: center;
+}
+.content_namejenner {
+  padding-top: 3em;
+  display: flex;
+  padding-left: 5em;
+  padding-right: 5em;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 400px;
+  height: 550px;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  margin-bottom: 2em;
+
+  justify-content: space-between;
+  color: #eeeeee;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.name_jenner1 {
+  background-image: url("https://media.gettyimages.com/id/1147428770/photo/kylie-jenner-attends-the-2019-met-gala-celebrating-camp-notes-on-fashion-at-metropolitan.jpg?s=612x612&w=0&k=20&c=79-9TAXm4ykRsjxGJFDpjn1lK-Keb59mm1OTIHHL8Sw=");
+  background-repeat: no-repeat;
+}
+.name_jenner2 {
+  background-image: url("https://media.gettyimages.com/id/1395051744/photo/kylie-jenner-attends-the-2022-met-gala-celebrating-in-america-an-anthology-of-fashion-at-the.jpg?s=612x612&w=0&k=20&c=AAOwfl2zxVzkhxZWI0d6gwGoH8gvZzhqCqiXlzJETlc=");
+}
+.name_jenner3 {
+  background-image: url("https://media.gettyimages.com/id/1428565970/photo/kylie-jenner-attends-the-acne-studio-womenswear-spring-summer-2023-show-as-part-of-paris.jpg?s=612x612&w=0&k=20&c=CdXmcusjXKESMnYqG-ALvFLIrREoH7XpVMgFF42v_2w=");
+}
+.name_jenner4 {
+  background-image: url("https://media.gettyimages.com/id/1128803083/photo/travis-scott-and-kylie-jenner-attend-the-61st-annual-grammy-awards-at-staples-center-on.jpg?s=612x612&w=0&k=20&c=ESZPf-DBqUwWyj2omZayAmqcFuhfWaX0k07F2VlxG8A=");
+}
+.name_jenner5 {
+  background-image: url("https://media.gettyimages.com/id/1458819055/photo/kylie-jenner-attends-the-schiaparelli-haute-couture-spring-summer-2023-show-as-part-of-paris.jpg?s=612x612&w=0&k=20&c=hab-QfXaj59j4kUTznS_coLTf28QYziWPdn9HsBrS9U=");
+}
+.name_jenner6 {
+  background-image: url("https://media.gettyimages.com/id/1205192801/photo/kylie-jenner-attends-the-2020-vanity-fair-oscar-party-hosted-by-radhika-jones-at-wallis.jpg?s=612x612&w=0&k=20&c=muXjXm9I_XvjhqL7NTnHbq8nAuExDEybGihLwy13rfs=");
+}
+.name_jenner7 {
+  background-image: url("https://media.gettyimages.com/id/1441824962/photo/kylie-jenner-attends-the-thierry-mugler-couturissime-exhibition-opening-night-at-brooklyn.jpg?s=612x612&w=0&k=20&c=uTljHZbQAXZz9n4u0--Pf4Hsa_3dL3APGSjkpaq-gJ0=");
+}
+.name_jenner8 {
+  background-image: url("https://media.gettyimages.com/id/675591244/photo/kylie-jenner-attends-the-rei-kawakubo-comme-des-garcons-art-of-the-in-between-costume.jpg?s=612x612&w=0&k=20&c=Z_9iJSxQtbqLTI29xZ_hEQ2TDhZO0hG_aBSi6tY5jxM=");
+}
+.name_jenner9 {
+  background-image: url("https://media.gettyimages.com/id/1441102270/photo/kylie-jenner-attends-the-2022-baby2baby-gala-presented-by-paul-mitchell-at-pacific-design.jpg?s=612x612&w=0&k=20&c=y5e-8bHP1z58sHC2ABZiVK-Sp184-fYhf4HPgTBKwqc=");
+}
+.name_jenner10 {
+  background-image: url("https://media.gettyimages.com/id/1439866749/photo/kylie-jenner-attends-the-cfda-fashion-awards-at-casa-cipriani-on-november-07-2022-in-new-york.jpg?s=612x612&w=0&k=20&c=eydQtBOUcZtKDVONIlqZ3pFRYN7ZxeuB474o3wampEw=");
+}
+.name_jenner11 {
+  background-image: url("https://media.gettyimages.com/id/1473114013/photo/kylie-jenner-attends-the-2023-vanity-fair-oscar-party-hosted-by-radhika-jones-at-wallis.jpg?s=612x612&w=0&k=20&c=eLR_qIKADSRrQNhhVRptJImdLMrLzNH0RkgKiYi-rao=");
+}
+.name_jenner12 {
+  background-image: url("https://media.gettyimages.com/id/1395053235/photo/kim-kardashian-attends-the-2022-met-gala-celebrating-in-america-an-anthology-of-fashion-at.jpg?s=612x612&w=0&k=20&c=GxaQfiiHXvI31ai7QTBHAeuPLIp3HNQXh55QLjkVx74=");
+}
+.name_jenner13 {
+  background-image: url("https://media.gettyimages.com/id/1398368711/photo/kendall-jenner-and-devin-booker-are-seen-arriving-at-ristorante-puny-in-portofino-on-may-20.jpg?s=612x612&w=0&k=20&c=HUkDDTgUdovpnytB_mTbPjQvI7S3Q3IjrbZTb1cDphc=");
+}
+
+.name_jenner14 {
+  background-image: url("https://media.gettyimages.com/id/1235262115/photo/the-tonight-show-starring-jimmy-fallon-episode-1514-pictured-model-kendall-jenner-during-an.jpg?s=612x612&w=0&k=20&c=HHxG0ZnyY2QQbmqCc4LJS5wzPDsh0_kZzQocuoD6CbU=");
+}
+.name_jenner15 {
+  background-image: url("https://media.gettyimages.com/id/819532318/photo/model-kendall-jenner-arrives-at-the-los-angeles-premiere-of-valerian-and-the-city-of-a.jpg?s=612x612&w=0&k=20&c=hopCJ2jHs8-_Fdxgf7QD3WchuURCE7GIvFkQnbimn1g=");
+}
+.position-btn {
+  margin-top: 30rem;
+  margin-left: 10rem;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #393939;
+}
+.position-btn:hover {
+  background-color: #393939;
+  color: #eeeeee;
+  cursor: pointer;
+}
