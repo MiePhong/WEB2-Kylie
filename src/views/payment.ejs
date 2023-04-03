@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../paymentcss/Payment.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+    />
+    <title>Payment</title>
+  </head>
+  <body onload="returnlistorder()">
+    <div class="hearder">
+      <h1>
+        <a href="chosetopining.ejs"
+          ><img src="img/arrow-left.png" alt="Back to size pizza's cake" />
+          Payment</a
+        >
+      </h1>
+    </div>
+    <div class="Content">
+      <div class="model" id="display-model">
+        <div class="model-inner">
+          <div class="model-Header">
+            <p>SIGN IN YOUR PAYPAL</p>
+            <img
+              onclick="displayBtnDelete()"
+              class="ho"
+              src="img/Delete.png"
+              alt=""
+            />
+          </div>
+          <div class="model-body">
+            <input type="text" name="" id="" placeholder="Email" /><br />
+            <input type="text" name="" id="" placeholder="Password" />
+          </div>
+          <div class="model-footer">
+            <button class="btn btn1" onclick="displaydot1()">Verity</button>
+          </div>
+        </div>
+      </div>
+      <div class="model1" id="display-model1">
+        <div class="model-inner">
+          <div class="model-Header">
+            <p>PAYMENT DETAIL</p>
+            <img
+              onclick="displayBtnDelete1()"
+              class="ho"
+              src="img/Delete.png"
+              alt=""
+            />
+          </div>
+          <div class="model-body">
+            <input type="text" name="" id="" placeholder="Email" /><br />
+            <input type="text" name="" id="" placeholder="Password" /><br />
+            <div class="datete">
+              <input type="date" name="" id="" />
+              <input type="date" name="" id="" />
+            </div>
+          </div>
+          <div class="model-footer">
+            <button class="btn btn1" onclick="displaydot2()">Confirm</button>
+          </div>
+        </div>
+      </div>
+      <div class="model1" id="display-model2">
+        <div class="model-inner">
+          <div class="model-Header">
+            <p>PAYMENT DETAIL</p>
+            <img
+              onclick="displayBtnDelete2()"
+              class="ho"
+              src="img/Delete.png"
+              alt=""
+            />
+          </div>
+          <div class="model-body">
+            <input type="text" name="" id="" placeholder="Email" /><br />
+            <input type="text" name="" id="" placeholder="Password" /><br />
+            <div class="datete">
+              <input type="date" name="" id="" />
+              <input type="date" name="" id="" />
+            </div>
+          </div>
+          <div class="model-footer">
+            <button class="btn btn1" onclick="displaydot3()">Confirm</button>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <div class="fill-infor">
+          <h1 class="title">FILL YOUR INFORMATTION</h1>
+          <form class="payment-form">
+            <input type="text" id="name" name="name" placeholder="Name" /><br />
+            <input
+              type="text"
+              id="phonenumber"
+              name="phonenumber"
+              placeholder="Phone Number"
+            /><br />
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+            /><br />
+          </form>
+        </div>
+        <div class="order-processing">
+          <div class="order-title">
+            <h1 class="title">ORDER PROCESSING</h1>
+            <div class="dropdown">
+              <div class="more" onclick="dropdown()">More dishes</div>
+              <div id="menu">
+                <ul>
+                  <li><a href="home.ejs">Select Available Pizzaa</a></li>
+                  <li><a href="size.ejs">Creat A New Pizza</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="list-order"></div>
+        </div>
+      </div>
+      <div>
+        <div class="payment-methods">
+          <h1 class="title">PAYMENT METHODS</h1>
+          <div class="methods">
+            <div class="methods-detail" onclick="cash()">
+              <img src="img/cash.png" alt="" />
+              <p>cash</p>
+              <div class="box" id="dot">
+                <img class="che" src="img/check.png" alt="" />
+              </div>
+            </div>
+            <div class="methods-detail" onclick="pay()">
+              <img src="img/paypal.png" alt="" />
+              <p>PayPal</p>
+              <div class="box" id="dot1">
+                <img class="che" src="img/check.png" alt="" />
+              </div>
+            </div>
+            <div class="methods-detail" onclick="mas()">
+              <img src="img/master-card.png" alt="" />
+              <p>Master Card</p>
+              <div class="box" id="dot2">
+                <img class="che" src="img/check.png" alt="" />
+              </div>
+            </div>
+            <div class="methods-detail" onclick="visa()">
+              <img src="img/visa.png" alt="" />
+              <p>Visa card</p>
+              <div class="box" id="dot3">
+                <img class="che" src="img/check.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="invoice">
+          <h1 class="title">INVOICE</h1>
+          <div class="methods">
+            <form class="payment-form">
+              <div class="note">
+                <img
+                  style="width: 35px; height: 40px"
+                  src="img/note.png"
+                  alt=""
+                />
+                <input
+                  type="text"
+                  id="note"
+                  name="note"
+                  placeholder="Do you want to note anything to the restaurant?"
+                />
+              </div>
+            </form>
+            <div id="inHTLM"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../sizecss/Storgatedata.js"></script>
+    <script src="../paymentcss/pay.js"></script>
+  </body>
+</html>

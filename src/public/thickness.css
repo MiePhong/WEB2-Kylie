@@ -1,0 +1,66 @@
+.Conten {
+  display: flex;
+}
+.thickness {
+  box-shadow: 0px 0px 20px rgb(196 196 196 / 50%);
+  border-radius: 30px;
+  width: 350px;
+  height: 180px;
+  margin: 50px 0 30px 110px;
+  text-align: center;
+  line-height: 50px;
+}
+.insert {
+  box-shadow: 0px 0px 20px rgb(196 196 196 / 50%) inset !important;
+}
+.line {
+  margin-top: 10px;
+  width: 40px;
+}
+.line1 {
+  margin-top: 40px;
+}
+.line2 {
+  margin-top: 30px;
+}
+
+.box {
+  display: block;
+}
+.radius {
+  border-radius: 15px !important;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgb(196 196 196 / 50%);
+}
+.menu {
+  margin-top: 100px;
+  text-align: center;
+  width: 350px;
+  height: 60px;
+  margin-left: 110px;
+  display: none;
+}
+.menu1,
+.menu2 {
+  height: 120px !important;
+}
+.linetext {
+  border: none;
+  background-color: white;
+  font-family: "Comfortaa";
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.thickness:hover {
+  box-shadow: 0px 0px 20px rgb(196 196 196 / 50%) !important;
+  cursor: pointer;
+}
+li:hover {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  margin-left: -10px;
+}

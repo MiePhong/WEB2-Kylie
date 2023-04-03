@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../homecss/home.css" />
+    <link rel="stylesheet" href="../homecss/homecheckbox.css " />
+    <title>Pizaa Good</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container heading-header">
+          <h1 class="name-heading">OUR SIGNATURE</h1>
+          <div class="list-icon">
+            <button><img src="../img/shopping-cart-24.png" alt=""></button>
+            <button><img src="../img/user-32.png" alt=""></button>
+          </div>
+        </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <ul class="signature-list">
+          <% for(let i = 0; i < listPizza.length; i++) { %>
+            <li class="signature-item">
+              <div class="checkbox-round">
+                <input type="checkbox" id=<%= listPizza[i].IdPizza %> />
+                <label for=<%= listPizza[i].IdPizza %> id="adddata"></label>
+              </div>
+              <img src=<%= listPizza[i].ImgPizza %> alt="" class="sinature-images" />
+              <img src=<%= listPizza[i].ImgToppingPizza %> alt="" class="train" />
+              <h3 class="signature-name"><%= listPizza[i].TenPizza %>: <%= listPizza[i].GiaTien %>$</h3>
+            </li>
+            <div class="line"></div>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container footer-container">
+        <div class="footer-buttons1">
+          <a href="size.ejs" class="btn"> Oder </a>
+        </div>
+        <div class="footer-buttons2">
+          <a href="size.ejs" class="btn"> Create your own </a>
+        </div>
+      </div>
+  </body>
+</html>

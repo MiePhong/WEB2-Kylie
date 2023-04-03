@@ -1,0 +1,156 @@
+/*kich thuoc anh*/
+.Content {
+  display: flex;
+}
+.Pizza {
+  margin: 150px;
+}
+.cake {
+  background-color: #a45d51;
+  width: 500px;
+  position: relative;
+}
+.title {
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+.text {
+  padding: 20px 0;
+}
+.product {
+  text-align: center;
+  display: flex;
+}
+.Toping {
+  margin: 0 10px;
+  width: 130px;
+  height: auto;
+  /* border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(196, 196, 196, 0.5);*/
+  border-radius: 30px;
+}
+.posiyion {
+  width: 120px;
+  height: 130px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgba(196, 196, 196, 0.5);
+  border-radius: 30px;
+  margin-top: -25px;
+  margin-left: 5px;
+  z-index: -1;
+}
+.image {
+  margin-left: 15px;
+  width: 50px;
+  height: auto;
+}
+
+.btn {
+  height: 50px;
+  width: 230px;
+  font-size: 20px;
+}
+.btn1,
+.wrapper {
+  border: 1px solid #a45d51;
+  background-color: white;
+  color: #a45d51;
+}
+.wrapper {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+
+.btn1 {
+  background-color: #a45d51;
+  color: white;
+  cursor: pointer;
+}
+
+#amount {
+  width: 20px;
+  text-align: center;
+}
+
+.Vegetable-toping {
+  height: 280px;
+}
+.text > .wrapper:hover {
+  background-color: #a45d51;
+  color: white;
+}
+#plus {
+  border: 1px solid #a45d51;
+  background-color: white;
+  color: #a45d51;
+  border-radius: 50%;
+  width: 50px;
+}
+
+#plus:hover {
+  cursor: pointer;
+  background-color: #a45d51;
+  color: rgb(255, 255, 255);
+}
+
+.additem::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 1px solid #a45d51;
+  border-radius: 50%;
+}
+.plus:hover {
+  background-color: #a45d51;
+  color: white;
+}
+
+.additem .plus {
+  position: absolute;
+  left: 1px;
+  font-size: 18px;
+  width: 19px;
+  border-radius: 50%;
+}
+
+.add {
+  position: absolute;
+  top: 230px;
+}
+#toppig-add1 {
+  z-index: 1 !important;
+}
+#toppig-add2 {
+  z-index: 2 !important;
+}
+#toppig-add3 {
+  z-index: 3 !important;
+}
+#toppig-add4 {
+  z-index: 4 !important;
+}
+#toppig-add5 {
+  z-index: 5 !important;
+}
+#toppig-add6 {
+  z-index: 6 !important;
+}
+#toppig-add7 {
+  z-index: 7 !important;
+}
+#toppig-add8 {
+  z-index: 8 !important;
+}
+#toppig-add9 {
+  z-index: 9 !important;
+}
+#toppig-add10 {
+  z-index: 10 !important;
+}
+#toppig-add11 {
+  z-index: 11 !important;
+}

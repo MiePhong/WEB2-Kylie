@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../chosetoppingcss/ChoseTopining.css " />
+    <link rel="stylesheet" href="../main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+    />
+    <title>Choose Toping</title>
+  </head>
+  <body>
+    <div class="hearder">
+      <h1>
+        <a href="chosethickness.ejs"
+          ><img src="img/arrow-left.png" alt="Back to size pizza's cake" />
+          Choose Your Topings</a
+        >
+      </h1>
+    </div>
+    <div class="Content">
+      <div class="Pizza">
+        <div id="cake">
+          <img src="img/pizza.png" alt="" />
+          <div class="add" id="topping-add1"></div>
+          <div class="add" id="topping-add2"></div>
+          <div class="add" id="topping-add3"></div>
+          <div class="add" id="topping-add4"></div>
+          <div class="add" id="topping-add5"></div>
+          <div class="add" id="topping-add6"></div>
+          <div class="add" id="topping-add7"></div>
+          <div class="add" id="topping-add8"></div>
+          <div class="add" id="topping-add9"></div>
+          <div class="add" id="topping-add10"></div>
+          <div class="add" id="topping-add11"></div>
+        </div>
+      </div>
+      <div class="Choose-Toping">
+        <div class="title">ADD TO PIZZA</div>
+        <div class="Vegetable-toping">
+          <div class="text">VEGETABLE</div>
+          <div class="product">
+            <div class="Toping">
+              <div class="image"><img src="img/Pineapple.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text1">
+                  <p>Pineapple</p>
+                  <p>$2</p>
+                  <label for="check_1" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_1"
+                      value="2"
+                      onclick="addPineapple()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image"><img src="img/Eggplant.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text2">
+                  <p>Eggplant</p>
+                  <p>$2</p>
+                  <label for="check_2" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_2"
+                      value="2"
+                      onclick="addEggplant()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image"><img src="img/Bell-Pepper.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text3">
+                  <p>Bell Pepper</p>
+                  <p>$2</p>
+                  <label for="check_3" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_3"
+                      value="2"
+                      onclick="addBellPepper()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image">
+                <img src="img/Mushroom-topping.png" alt="" />
+              </div>
+              <div class="posiyion">
+                <div class="text" id="text4">
+                  <p>Mushroom</p>
+                  <p>$2</p>
+                  <label for="check_4" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_4"
+                      value="2"
+                      onclick="addMushroom()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image">
+                <img src="img/Onion-toppping.png" alt="" />
+              </div>
+              <div class="posiyion">
+                <div class="text" id="text5">
+                  <p>Onion</p>
+                  <p>$2</p>
+                  <label for="check_5" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_5"
+                      value="2"
+                      onclick="addOnion()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image">
+                <img src="img/Olive-topping.png" alt="" />
+              </div>
+              <div class="posiyion">
+                <div class="text" id="text6">
+                  <p>Olive</p>
+                  <p>$2</p>
+                  <label for="check_6" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_6"
+                      value="2"
+                      onclick="addOlive()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Meat-toping">
+          <div class="text">MEAT</div>
+          <div class="product">
+            <div class="Toping">
+              <div class="image"><img src="img/Ham.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text7">
+                  <p>Ham</p>
+                  <p>$2</p>
+                  <label for="check_7" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_7"
+                      value="2"
+                      onclick="addHam()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image">
+                <img src="img/Pepperoni-topping.png" alt="" />
+              </div>
+              <div class="posiyion">
+                <div class="text" id="text8">
+                  <p>Pepperoni</p>
+                  <p>$2</p>
+                  <label for="check_8" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_8"
+                      value="2"
+                      onclick="addPepperoni()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image"><img src="img/Bacon.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text9">
+                  <p>Bacon</p>
+                  <p>$2</p>
+                  <label for="check_9" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_9"
+                      value="2"
+                      onclick="addBacon()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image"><img src="img/Sausage.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text10">
+                  <p>Sausage</p>
+                  <p>$2</p>
+                  <label for="check_10" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_10"
+                      value="2"
+                      onclick="addSausage()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="Toping">
+              <div class="image"><img src="img/Anchovy.png" alt="" /></div>
+              <div class="posiyion">
+                <div class="text" id="text11">
+                  <p>Anchovy</p>
+                  <p>$2</p>
+                  <label for="check_11" class="additem">
+                    <input
+                      type="checkbox"
+                      class="add"
+                      name="tin"
+                      id="check_11"
+                      value="2"
+                      onclick="addAnchovy()"
+                    />
+                    <span class="plus">+</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fooder">
+      <a href="payment.ejs"
+        ><button class="btn btn1" onclick="topping()">Order</button></a
+      >
+    </div>
+    <script src="../chosetoppingcss/addtoping.js "></script>
+    <script src="../sizecss/Storgatedata.js"></script>
+  </body>
+</html>

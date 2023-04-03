@@ -1,0 +1,46 @@
+.checkbox-round {
+  position: absolute;
+  z-index: 5;
+}
+.checkbox-round label {
+  position: absolute;
+  background-color: #fff;
+  border: 2.5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.8rem;
+  width: 1.8rem;
+  left: 0;
+  top: 0;
+}
+.checkbox-round label:after {
+  position: absolute;
+  border: 2.6px solid #fff;
+  transform: rotate(-45deg);
+  border-top: none;
+  border-right: none;
+  content: "";
+
+  height: 6px;
+
+  opacity: 0;
+
+  top: 6px;
+  left: 5px;
+
+  transition: 1s;
+
+  width: 12px;
+}
+.checkbox-round input[type="checkbox"] {
+  visibility: hidden;
+}
+.checkbox-round input[type="checkbox"]:checked + label {
+  background-color: black;
+  border-color: black;
+  transition: 0.5s;
+}
+.checkbox-round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+

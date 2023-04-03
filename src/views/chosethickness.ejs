@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../thickness.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+    />
+    <title>Thickness</title>
+  </head>
+  <body>
+    <div class="hearder">
+      <h1>
+        <a href="size.ejs">
+          <img src="img/arrow-left.png" alt="Back to size pizza's cake" />
+          Choose Your Thickness
+        </a>
+      </h1>
+    </div>
+    <div class="Conten">
+      <div class="dropdown">
+        <div class="thickness insert" onclick="addthickness(this)">
+          <p>Thin Crust</p>
+          <img src="img/thin-curst.png" alt="" /><br />
+          <img
+            class="line line1"
+            src="img/line-angle-down-icon (1).png"
+            alt=""
+          />
+        </div>
+        <div class="menu radius" id="box">
+          <ul class="linetext">
+            <li onclick="getValueThickness(this)">Cheesy Crust = 0.05$</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="thickness insert" onclick="addthickness2(this)">
+          <p>New York Crust</p>
+          <img src="img/new-york-crust.png" alt="" /><br />
+          <img class="line" src="img/line-angle-down-icon (1).png" alt="" />
+        </div>
+        <div class="menu radius menu1" id="box2">
+          <ul class="linetext">
+            <li onclick="getValueThickness(this)">Extra Cheese = 0.05$</li>
+            <li onclick="getValueThickness(this)">Double Cheese = 0.75$</li>
+            <li onclick="getValueThickness(this)">Triple Cheese = 0.99$</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="thickness insert" onclick="addthickness3(this)">
+          <p>Handtossed</p>
+          <img src="img/handtossed.png" alt="" /><br />
+          <img
+            class="line line2"
+            src="img/line-angle-down-icon (1).png"
+            alt=""
+          />
+        </div>
+        <div class="menu radius menu2" id="box3">
+          <ul class="linetext">
+            <li onclick="getValueThickness(this)">Cheesy Crust = 0.99$</li>
+            <li onclick="getValueThickness(this)">Sausage Parsley= 0.99$</li>
+            <li onclick="getValueThickness(this)">Sausage Cheese= 1.99$</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../sizecss/Storgatedata.js"></script>
+  </body>
+</html>
